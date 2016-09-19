@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <TextView
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Catch me if you can!" />
+
+    <!--face book login-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="face book login"/>
+    <!--face book login end -->
+
+    <!--twiter book login-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="twiter login"/>
+    <!--twiter book login end-->
+
+    <!--google+ login-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="google+ login"/>
+    <!--google+ login end-->
+
+    <!-- naver login-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="naver login"/>
+    <!-- naver login end-->
+
+    <!-- test login-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test login"
+        android:id="@+id/test_login"
+        android:onClick="onButton"/>
+    <!-- test login-->
+
+    <!-- search page-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search page"
+        android:id="@+id/search_page_button"/>
+    <!-- search page end-->
+
+</LinearLayout>
+</ScrollView>

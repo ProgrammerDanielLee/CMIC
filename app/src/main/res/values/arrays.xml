@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drink_list">
+        <item>주량을 선택하시오</item>
+        <item>주당</item>
+        <item>소주 10병이상</item>
+        <item>소주 5병 이상 ~ 10병 이하</item>
+        <item>소주 1병 이상 ~ 5병 이하</item>
+        <item>소주 1병 이하</item>
+        <item>소주 반병</item>
+        <item>안알랴줌(=못마심)</item>
+    </string-array>
+</resources>

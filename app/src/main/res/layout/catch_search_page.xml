@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--개인정보 입력 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="information page\n"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <!--생년월일 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"
+        />
+    <!--생년월일 끝-->
+
+
+    <!--닉네임 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nick name"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="C.M.I에서 사용할 닉네임을 입력하세요"
+        android:id="@+id/nickname"
+        />
+    <!--닉네임 끝-->
+
+    <!--혈액형 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+    <Spinner
+        android:id="@+id/blood_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+    <!--혈액형 끝-->
+
+    <!--직업 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="job"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/select_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="직업을 선택해 주세요."
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <!--직업 끝-->
+
+    <!--지역-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="area"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+    <!--지역 끝-->
+
+    <!--종교 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="religion"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+    <Spinner
+        android:id="@+id/religion_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+    <!--종교 끝-->
+
+    <!--키 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tall"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/tall_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+    <!--키 끝-->
+
+    <!--흡연여부 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="smoking"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+    <Spinner
+        android:id="@+id/select_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:prompt="@string/select"/>
+    <!--흡연여부 끝-->
+
+    <!--체형 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="corporal punishment"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+
+    <Spinner
+    android:id="@+id/colporal_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp" />
+    <!--체형 끝-->
+
+
+    <!--음주 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="beer"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+    <Spinner
+        android:id="@+id/drink_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <!--음주 끝-->
+
+    <!--성격 시작-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="character"
+        android:textSize="30dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:background="@color/spinner_title_item"
+        android:gravity="center"/>
+    <!--성격 끝-->
+</LinearLayout>
+    <!--개인정보 입력 끝-->
+</ScrollView>
