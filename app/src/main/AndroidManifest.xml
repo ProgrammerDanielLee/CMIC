@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lovef.catch_me_if_you_can">
 
+        <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,6 +19,7 @@
         <activity android:name=".catch_join_page"></activity>
         <activity android:name=".catch_search_page"></activity>
         <activity android:name=".job_page"></activity>
-        <uses-permission android:name="android.permission.INTERNET"/>
+        <activity android:name=".thread_test1"></activity>
+        <activity android:name=".async_test1"></activity>
     </application>
 </manifest>

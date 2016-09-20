@@ -67,5 +67,23 @@
         android:id="@+id/search_page_button"/>
     <!-- search page end-->
 
+    <!--Thread page-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread page"
+        android:id="@+id/thread_page_button"/>
+    <!--Thread page end-->
+
+    <!--Async page-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="async page"
+        android:id="@+id/async_page_button"/>
+    <!--Async page end-->
+
 </LinearLayout>
 </ScrollView>
