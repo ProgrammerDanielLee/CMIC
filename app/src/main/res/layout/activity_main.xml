@@ -85,5 +85,13 @@
         android:id="@+id/async_page_button"/>
     <!--Async page end-->
 
+    <!--회원가입 페이지-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="join page"
+        android:id="@+id/join_page_button"/>
+    <!--회원가입 페이지 끝-->
 </LinearLayout>
 </ScrollView>
