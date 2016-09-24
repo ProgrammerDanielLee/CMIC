@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:gravity="center"
-            android:text="본인의 3가지 성향을 선택해주세요"/>
+            android:text="본인의 직업을 선택해주세요"/>
 
         <View
             android:layout_width="match_parent"
@@ -21,25 +21,15 @@
             android:layout_height="4dp"/>
         <TextView
             android:id="@+id/show_job"
-            android:text="선택된 성향 : "
+            android:text="선택된 직업 - "
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15dp"
+            android:textColor="@color/spinner_title_item_white"
             android:gravity="center"/>
+    <!--
         <TableRow
             android:weightSum="3">
-            <!--
-            <TextView
-                android:background="#FFFFFF"
-                android:layout_marginBottom="1dp"
-                android:layout_marginLeft="1dp"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textSize="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="변호사1"/>-->
-
             <CheckBox
                 android:id="@+id/select_job1"
                 android:background="#FFFFFF"
@@ -52,18 +42,6 @@
                 android:layout_height="50dp"
                 android:text="프로그래머"/>
 
-            <!--
-            <TextView
-                android:background="#FFFFFF"
-                android:layout_marginBottom="1dp"
-                android:layout_marginLeft="1dp"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textSize="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="변호사2"/>-->
-
             <CheckBox
                 android:id="@+id/select_job2"
                 android:background="#FFFFFF"
@@ -75,17 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:text="변호사"/>
-        <!--
-            <TextView
-                android:background="#FFFFFF"
-                android:layout_marginBottom="1dp"
-                android:layout_marginLeft="1dp"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textSize="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="변호사3"/>-->
+
             <CheckBox
                 android:id="@+id/select_job3"
                 android:background="#FFFFFF"
@@ -101,17 +69,6 @@
 
     <TableRow
         android:weightSum="3">
-        <!--
-        <TextView
-            android:background="#FFFFFF"
-            android:layout_marginBottom="1dp"
-            android:layout_marginLeft="1dp"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="변호사1"/>-->
 
         <CheckBox
             android:id="@+id/select_job4"
@@ -125,18 +82,6 @@
             android:layout_height="50dp"
             android:text="백수"/>
 
-        <!--
-        <TextView
-            android:background="#FFFFFF"
-            android:layout_marginBottom="1dp"
-            android:layout_marginLeft="1dp"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="변호사2"/>-->
-
         <CheckBox
             android:id="@+id/select_job5"
             android:background="#FFFFFF"
@@ -148,17 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="백수직전"/>
-        <!--
-            <TextView
-                android:background="#FFFFFF"
-                android:layout_marginBottom="1dp"
-                android:layout_marginLeft="1dp"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textSize="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="변호사3"/>-->
+
         <CheckBox
             android:id="@+id/select_job6"
             android:background="#FFFFFF"
@@ -171,4 +106,54 @@
             android:layout_height="50dp"
             android:text="공무원"/>
     </TableRow>
+-->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+        <RadioButton
+            android:id="@+id/select_job1_rb"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="전문직"
+            />
+        <RadioButton
+            android:id="@+id/select_job2_rb"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="서비스직"
+            />
+        <RadioButton
+            android:id="@+id/select_job3_rb"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="생산직"
+            />
+        </RadioGroup>
+        <Button
+            android:id="@+id/job_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="완  료"
+            />
     </TableLayout>

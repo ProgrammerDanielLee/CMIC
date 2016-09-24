@@ -26,12 +26,10 @@
             android:gravity="center_vertical"/>
         <EditText
             android:id="@+id/join_page_email_id"
+            android:inputType="textEmailAddress"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:cursorVisible="false"
-            android:hint="e-mail을 입력하세요"/>
+            android:hint="e-mail을 입력해주세요"/>
     </LinearLayout>
     <!--이메일 끝-->
     <!--이름 입력하기-->
@@ -50,8 +48,7 @@
             android:id="@+id/join_page_name_id"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:focusable="false"
-            android:hint="이름을 입력하세요"/>
+            android:hint="이름을 입력해주세요"/>
     </LinearLayout>
     <TextView
         android:gravity="center"
@@ -103,7 +100,6 @@
             android:id="@+id/join_page_pwcf_id"
             android:layout_width="180dp"
             android:layout_height="50dp"
-            android:focusable="false"
             android:hint="비밀번호를 다시 입력해주세요"
             android:inputType="textPassword"/>
         </LinearLayout>
@@ -146,8 +142,17 @@
             android:layout_width="wrap_content"
             android:layout_weight="50"
             android:layout_height="50dp"
-            android:text="다음으로"
+            android:onClick="insert"
+            android:text="가입완료"
             android:id="@+id/join_page_next_button" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:onClick="insert"
+            android:text="소개팅 정보 입력"
+            android:id="@+id/join_page_search_button" />
         </LinearLayout>
+
     <!--버튼들 끝-->
 </LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#A3A3A3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="본인의 성격(혹은 성향)을 3가지 선택해주세요"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#A3A3A3"
+        android:layout_height="4dp"/>
+    <TextView
+        android:id="@+id/show_mind"
+        android:text="선택된 성격 - "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/spinner_title_item_white"
+        android:gravity="center"/>
+    <TableRow
+        android:weightSum="3">
+        <CheckBox
+            android:id="@+id/select_mind1"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="온순한"/>
+
+        <CheckBox
+            android:id="@+id/select_mind2"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="괴팍한"/>
+
+        <CheckBox
+            android:id="@+id/select_mind3"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="상냥한"/>
+    </TableRow>
+    <TableRow
+        android:weightSum="3">
+
+        <CheckBox
+            android:id="@+id/select_mind4"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="자상한"/>
+
+        <CheckBox
+            android:id="@+id/select_mind5"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="거친"/>
+
+        <CheckBox
+            android:id="@+id/select_mind6"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="무기력한"/>
+    </TableRow>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mind_click"
+        android:text="선택 완료"/>
+</TableLayout>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lovef.catch_me_if_you_can">
-
-        <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,14 +11,18 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".catch_join_page"></activity>
-        <activity android:name=".catch_search_page"></activity>
-        <activity android:name=".job_page"></activity>
-        <activity android:name=".thread_test1"></activity>
-        <activity android:name=".async_test1"></activity>
+        <activity android:name=".catch_search_page"/>
+        <activity android:name=".catch_login_page"/>
+        <activity android:name=".catch_menu_page"/>
+        <activity android:name=".job_page"/>
+        <activity android:name=".thread_test1"/>
+        <activity android:name=".async_test1"/>
+        <activity android:name=".test_json"/>
+        <activity android:name=".catch_db"/>
+        <activity android:name=".catch_mind_page"/>
     </application>
+
 </manifest>
