@@ -2,4 +2,5 @@
     <string name="app_name">Catch_Me_If_You_Can</string>
     <string name="spinner_drink_dialog_title">주량을 선택하세요!</string>
     <string name="select"> 커스텀 다이얼로그 스피너</string>
+    <string name="facebook_app_id">125261467934883</string>
 </resources>

@@ -10,4 +10,10 @@
         <item>소주 반병</item>
         <item>안알랴줌(=못마심)</item>
     </string-array>
+    <string-array name="test_list">
+        <item>주량을 선택하시오</item>
+        <item>주당</item>
+        <item>소주 10병이상</item>
+        <item>소주 5병 이상 ~ 10병 이하</item>
+    </string-array>
 </resources>

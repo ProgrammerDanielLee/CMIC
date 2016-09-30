@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/catch_main_page_main_drawer"
+    tools:context=".catch_main_page" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_catch_main_page" />
+
+    <ListView android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_catch_main_page"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#EDEDED"/>
+</android.support.v4.widget.DrawerLayout>
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/catch_main_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--TestFragment를 MainActivity가 보여줄 view로 고정시켜서 배치-->
+    <!--직접적으로 xml레이아웃 파일에 태그문으로 생성된 fragment는 동적으로 재배치/삭제 불가-->
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.lovef.catch_me_if_you_can.catch_fragment_text"
+        android:id="@+id/catch_main_frag"
+        />
+</LinearLayout>

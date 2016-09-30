@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lovef.catch_me_if_you_can">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/><!--facebook login여기-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".catch_search_page"/>
-        <activity android:name=".catch_login_page"/>
-        <activity android:name=".catch_menu_page"/>
-        <activity android:name=".job_page"/>
-        <activity android:name=".thread_test1"/>
-        <activity android:name=".async_test1"/>
-        <activity android:name=".test_json"/>
-        <activity android:name=".catch_db"/>
-        <activity android:name=".catch_mind_page"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/><!--facebook login여기-->
+            <activity android:name=".MainActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <activity android:name=".catch_search_page"/>
+            <activity android:name=".catch_login_page"/>
+            <activity android:name=".catch_menu_page"/>
+            <activity android:name=".job_page"/>
+            <activity android:name=".thread_test1"/>
+            <activity android:name=".async_test1"/>
+            <activity android:name=".test_json"/>
+            <activity android:name=".catch_db"/>
+            <activity android:name=".catch_mind_page"/>
+            <activity android:name=".catch_main_page"/>
+            <activity android:name=".catch_information_page"/>
+             <activity android:name=".test_viewpager"/>
+        <!--facebook login여기-->
+            <activity android:name="com.facebook.FacebookActivity"
+                android:configChanges=
+                    "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                android:label="@string/app_name" />
+        <!--naver login여기-->
+        <!--
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app" android:screenOrientation="portrait"/>
+            -->
     </application>
 
 </manifest>

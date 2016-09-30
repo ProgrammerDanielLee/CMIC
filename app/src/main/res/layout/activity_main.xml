@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,9 +15,82 @@
         android:textSize="30dp"
         android:gravity="center"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="10dp"
         android:text="Catch \n me \n if \n you \n can" />
 
+    <!--facebook 시작-->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+    <!--facebook 끝-->
+<!--Google + login 시작-->
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign_out"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/sign_out_and_disconnect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="sign_out"
+            />
+
+        <Button
+            android:id="@+id/disconnect_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="disconnect"
+            />
+    </LinearLayout>
+<!--Google + login 끝-->
+    <!--Google login 시작-->
+    <!--
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        tools:visibility="gone" />
+        -->
+    <!--Google login 끝-->
+    <!--Naver시작-->
+    <!--
+    <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+        android:id="@+id/buttonOAuthLoginImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+        -->
+    <!--Naver 끝-->
     <!--이메일 시작-->
     <LinearLayout
         android:gravity="center"
@@ -167,6 +240,15 @@
         android:text="join page"
         android:id="@+id/join_page_button1"/>
     <!--회원가입 페이지 끝-->
+
+    <!--View pager 시작-->
+
+
+    <!--Viewpager 끝-->
+
+    <!--fragment 예제-->
+
+    <!--fragment 예제 끝-->
 
 </LinearLayout>
 </ScrollView>
