@@ -275,5 +275,19 @@
         android:id="@+id/v_a_f"
         />
     <!--viewpager+tap+fragment 끝-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment"
+        android:id="@+id/bt_test_fragment"/>
+
+    <!--tabpager+tab+fragment 시작-->
+    <Button
+        android:id="@+id/tabpagerfragment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tabpagerfragment(not actionbar)"/>
+    <!--tabpager+tab+fragment 끝-->
 </LinearLayout>
 </ScrollView>

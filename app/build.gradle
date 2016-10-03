@@ -25,6 +25,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.facebook.android:facebook-android-sdk:4.+'//이렇게 하면 앱에 com.facebook.FacebookSdk를 가져올 수 있다.
+    compile 'com.android.support:design:24.0.0'
     //compile files('libs/3rdparty_login_library_android_4.1.4.jar') //네이버 sdk사용하기..
    // compile 'com.google.android.gms:play-services-auth:8.3.0'
 
