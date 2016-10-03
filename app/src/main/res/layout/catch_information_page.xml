@@ -2,8 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="30dp">
-
+    android:layout_marginTop="10dp">
+<!--이메일 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,8 +16,16 @@
         android:id="@+id/sns_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="\n"
         />
+    </LinearLayout>
+    <!--이메일 끝-->
 
+    <!--이름 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,8 +33,16 @@
     <TextView
         android:id="@+id/sns_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="\n"/>
+        </LinearLayout>
+    <!--이름 끝-->
 
+    <!--성별 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,22 +50,164 @@
     <TextView
         android:id="@+id/sns_gender"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="나이 : "/>
-    <TextView
-        android:id="@+id/sns_age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="\n"/>
+        </LinearLayout>
+    <!--성별 끝-->
 
-    <Button
-        android:id="@+id/information_page_next_page"
-        android:layout_marginTop="80dp"
+    <!--나이 시작-->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다음"/>
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="나이 : "/>
+        <!--
+        <TextView
+            android:id="@+id/sns_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+        <EditText
+            android:id="@+id/age_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="13"
+            android:maxLength="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="세"/>
+    </LinearLayout>
+    <!--나이 끝-->
+    <!--키 시작-->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="키 : "/>
+    <EditText
+        android:id="@+id/tall_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_weight="13"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="cm"/>
+    </LinearLayout>
+    <!--키 끝-->
 
-</LinearLayout>
+    <!--혈액형 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="혈액형 : " />
+    <Spinner
+        android:id="@+id/blood_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    <!--혈액형 끝-->
+
+    <!--직업 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="직업 : 준 비 중"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <!--직업 끝-->
+
+    <!--지역 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역 : "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="준 비 중\n"/>
+    </LinearLayout>
+    <!--지역 끝-->
+
+    <!--흡연여부-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="흡연여부 : "/>
+        <Spinner
+            android:id="@+id/smoking_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+        </LinearLayout>
+    <!--흡연여부 끝-->
+
+    <!--체형시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="체형 : "/>
+        <Spinner
+            android:id="@+id/colporal_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+        </LinearLayout>
+    <!--체형 끝-->
+
+    <!--성격 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성격 : 준 비 중"/>
+        </LinearLayout>
+    <!--성격 끝-->
+<Button
+android:id="@+id/information_page_next_page"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="다음"/>
+
+    </LinearLayout>

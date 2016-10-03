@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,8 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"
         android:gravity="center"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:text="Catch \n me \n if \n you \n can" />
 
     <!--facebook 시작-->
@@ -28,7 +27,7 @@
         android:layout_marginBottom="30dp" />
     <!--facebook 끝-->
 <!--Google + login 시작-->
-
+<!--
     <TextView
         android:id="@+id/status"
         android:layout_width="wrap_content"
@@ -36,14 +35,17 @@
         android:text="sign_out"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
-
+-->
+<!--
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:visibility="visible"/>
-
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:layout_marginBottom="30dp"/>-->
+<!--
     <LinearLayout
         android:id="@+id/sign_out_and_disconnect"
         android:layout_width="fill_parent"
@@ -70,7 +72,8 @@
             android:layout_weight="1"
             android:text="disconnect"
             />
-    </LinearLayout>
+    </LinearLayout>-->
+
 <!--Google + login 끝-->
     <!--Google login 시작-->
     <!--
@@ -241,14 +244,36 @@
         android:id="@+id/join_page_button1"/>
     <!--회원가입 페이지 끝-->
 
-    <!--View pager 시작-->
-
-
-    <!--Viewpager 끝-->
-
     <!--fragment 예제-->
-
+    <!--main에 풀어놨음-->
     <!--fragment 예제 끝-->
+    
+    <!--View pager + fragment 시작-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View pager+Fragment"
+        android:id="@+id/viewpager_button"/>
+    <!--Viewpager+ fragment 끝-->
 
+    <!--view pager + tab 시작-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View pager+ActionBar(Tab)"
+        android:id="@+id/tablayout_button"/>
+    <!--viewpager +tap끝-->
+
+    <!--viewpager+tap+fragment 시작-->
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viewpager+ActionBar(Tab)+fragment"
+        android:id="@+id/v_a_f"
+        />
+    <!--viewpager+tap+fragment 끝-->
 </LinearLayout>
 </ScrollView>

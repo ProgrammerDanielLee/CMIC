@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lovef.catch_me_if_you_can">
     <uses-permission android:name="android.permission.INTERNET"/><!--facebook login여기-->
+    <!--구글 시작-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    구글 끝-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,6 +34,10 @@
             <activity android:name=".catch_main_page"/>
             <activity android:name=".catch_information_page"/>
              <activity android:name=".test_viewpager"/>
+            <activity android:name=".test_tab"/>
+            <activity android:name=".test_viewpager_tap_fragment"/>
+
+
         <!--facebook login여기-->
             <activity android:name="com.facebook.FacebookActivity"
                 android:configChanges=

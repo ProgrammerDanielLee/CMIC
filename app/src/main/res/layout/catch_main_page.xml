@@ -37,13 +37,21 @@
         android:id="@+id/catch_main_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <!--TestFragment를 MainActivity가 보여줄 view로 고정시켜서 배치-->
-    <!--직접적으로 xml레이아웃 파일에 태그문으로 생성된 fragment는 동적으로 재배치/삭제 불가-->
 
+    <Button
+        android:id="@+id/catch_main_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change text in the fragment"
+        android:onClick="mOnClick"/>
+
+
+    <!--Fragment를 MainActivity가 보여줄 view로 고정시켜서 배치,
+    직접적으로 xml레이아웃 파일에 태그문으로 생성된 fragment는 동적으로 재배치/삭제 불가-->
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.example.lovef.catch_me_if_you_can.catch_fragment_text"
         android:id="@+id/catch_main_frag"
-        />
+        /><!--fragment를 여기에 담는다-->
 </LinearLayout>
