@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="spinner_title_item">#000000</color>
     <color name="spinner_title_item_white">#FFFF</color>
+    <color name="password_success">#0EAC3D</color>
+    <color name="password_fail">#ED1C24</color>
 </resources>

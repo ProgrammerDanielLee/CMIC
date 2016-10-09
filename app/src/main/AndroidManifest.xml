@@ -23,6 +23,7 @@
                 </intent-filter>
             </activity>
             <activity android:name=".catch_search_page"/>
+            <activity android:name=".catch_join_page"/>
             <activity android:name=".catch_login_page"/>
             <activity android:name=".catch_menu_page"/>
             <activity android:name=".job_page"/>
@@ -38,6 +39,11 @@
             <activity android:name=".test_viewpager_tap_fragment"/>
             <activity android:name=".test_fragment"/>
             <activity android:name=".test_tab_pager_fragment"/>
+            <activity android:name=".test_google_login"/>
+            <activity android:name=".datatextview"/>
+            <activity android:name=".datalistview"/>
+            <activity android:name=".php_mysql_fcm"/>
+            <activity android:name=".php_cronetab"/>
 
         <!--facebook login여기-->
             <activity android:name="com.facebook.FacebookActivity"

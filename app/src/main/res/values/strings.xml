@@ -3,5 +3,7 @@
     <string name="spinner_drink_dialog_title">주량을 선택하세요!</string>
     <string name="select"> 커스텀 다이얼로그 스피너</string>
     <string name="facebook_app_id">125261467934883</string>
-
+    <!--Button text-->
+    <string name="signed_in_fmt">signed in</string><!--this is not button text-->
+    <string name="signed_out_fmt">signed out</string>
 </resources>

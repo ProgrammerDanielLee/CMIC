@@ -1,158 +1,476 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="회원가입"
-        android:layout_marginTop="30dp"
-        android:textSize="40dp"
-        android:gravity="center_horizontal"
-        />
-    <!--이메일 시작-->
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_height="match_parent">
         <TextView
-            android:layout_width="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입 및 추가정보 입력"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+        <!--이메일 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="e-mail : "
-            android:textSize="20dp"
-            android:gravity="center_vertical"/>
-        <EditText
-            android:id="@+id/join_page_email_id"
-            android:inputType="textEmailAddress"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:hint="e-mail을 입력해주세요"/>
-    </LinearLayout>
-    <!--이메일 끝-->
-    <!--이름 입력하기-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="이메일 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/catch_join_page_email_id"
+                android:maxLength="60"
+                android:inputType="textEmailAddress"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:layout_width="200dp"
+                android:layout_height="50dp"/>
+            <!--자동포커스를 막는 두가지 속성 android:focusable="true" android:focusableInTouchMode="true"-->
+            <!--그리고 초기 키보드 자동실행을 막는법또한 android:windowSoftInputMode="stateAlwaysHidden"이다-->
+        </LinearLayout>
         <TextView
-            android:layout_width="80dp"
+            android:id="@+id/under_catch_join_page_email_id"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/password_fail"
+            android:visibility="gone"
+            android:text="* 이메일 형식대로 작성해주세요"/>
+        <!--이메일 끝-->
+        <!--이름 입력하기-->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="name : "
-            android:textSize="20dp"
-            android:gravity="center_vertical"/>
-        <EditText
-            android:id="@+id/join_page_name_id"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:hint="이름을 입력해주세요"/>
-    </LinearLayout>
-    <TextView
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12dp"
-        android:text="*위의 이름은 앱에서 쓰이는 ID가 아닙니다.\n ID 및 비밀번호 찾기에 쓰이는 이름입니다."/>
-    <!--이름 끝-->
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="이 름 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/catch_join_page_name_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:maxLength="11"/>
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="*위의 이름은 ID 및 비밀번호 찾기에 쓰이는 이름입니다."/>
+        <TextView
+            android:id="@+id/under_catch_join_page_name_id"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="@color/password_fail"
+            android:visibility="gone"
+            android:text="*이름은 10자 이내로 작성해주세요"/>
+        <!--이름 끝-->
 
-    <!--비밀번호 시작-->
+        <!--비밀번호 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="비밀번호 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/catch_join_page_pw_id"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:maxLength="13" />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/under_catch_join_page_pw_id"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/password_fail"
+            android:textSize="10dp"
+            android:text="* 영문과 숫자 조합으로 6자~12자 이내로 입력해주세요"
+            android:visibility="gone"/>
+        <!--비밀번호 끝-->
+        <!--비밀번호 확인 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="확 인 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/catch_join_page_pwcf_id"
+                android:maxLength="13"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"/>
+            </LinearLayout>
+        <!--비밀번호 확인 끝-->
+
+        <!--성별 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="성 별 : "
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <RadioGroup
+                    android:id="@+id/catch_join_page_sexs_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/catch_join_page_man_radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남자"/>
+                    <RadioButton
+                        android:id="@+id/catch_join_page_girl_radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="여자"/>
+                    <!--
+                    <RadioButton
+                        android:id="@+id/catch_join_page_trans_radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="기타"/>-->
+                </RadioGroup>
+            </LinearLayout>
+        <!--성별 끝-->
+
+        <!--나이 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="나 이 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/catch_join_page_age_id"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:maxLength="3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="0.1"
+                android:text="세"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/under_catch_join_page_age_id"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/password_fail"
+            android:textSize="10dp"
+            android:text="* 100세 이상이신 분들은 죄송합니다.."
+            android:visibility="gone"/>
+        <!--나이 끝-->
+
+        <!--키 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="키 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/catch_join_page_tall_id"
+                android:inputType="number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:maxLength="3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="0.1"
+                android:text="CM"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/under_catch_join_page_tall_id"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/password_fail"
+            android:textSize="10dp"
+            android:text="* 키를 제대로 입력했는지 확인해주세요"
+            android:visibility="gone"/>
+        <!--키 끝-->
+
+        <!--직 업 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="직 업 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <!--
+            <EditText
+                android:id="@+id/catch_join_page_job_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:maxLength="11"/>-->
+            <AutoCompleteTextView
+                android:id="@+id/catch_join_page_job_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:maxLength="11"/>
+        </LinearLayout>
+        <!--직업 끝-->
+
+        <!--지역 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_weight="35"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="지 역 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <Spinner
+                android:id="@+id/catch_join_page_local_id"
+                android:spinnerMode="dialog"
+                android:gravity="center_vertical"
+                android:layout_weight="65"
+                android:layout_width="0dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="20"
+                android:text=""/>
+        </LinearLayout>
+        <!--지역 끝-->
+
+        <!--혈액형 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_weight="35"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="혈액형 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <Spinner
+                android:id="@+id/catch_join_page_blood_id"
+                android:spinnerMode="dialog"
+                android:gravity="center_vertical"
+                android:layout_weight="60"
+                android:layout_width="0dp"
+                android:layout_height="50dp"/>
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="20"
+                android:text="형"/>-->
+        </LinearLayout>
+        <!--혈액형 끝-->
+
+        <!--흡연여부 시작-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
         <TextView
             android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:text="password : "
+            android:layout_height="30dp"
+            android:text="흡연여부 : "
             android:textSize="20dp"
-            android:gravity="center_vertical"/>
-        <EditText
-            android:id="@+id/join_page_pw_id"
-            android:layout_width="180dp"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            android:hint="비밀번호를 입력해주세요"/>
+            android:gravity="center"/>
+            <RadioGroup
+                android:id="@+id/catch_join_page_smoke_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/catch_join_page_smoke_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="흡연자"/>
+                <RadioButton
+                    android:id="@+id/catch_join_page_nosmoke_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="비흡연자"/>
+            </RadioGroup>
         </LinearLayout>
-    <TextView
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12dp"
-        android:text="* 4자~12자 이내로 입력해주세요."/>
-    <!--비밀번호 끝-->
-    <!--비밀번호 확인 시작-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        <!--흡연여부 끝-->
+
+        <!--성격 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="성격 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <AutoCompleteTextView
+                android:id="@+id/catch_join_page_mind_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:maxLength="11"/>
+        </LinearLayout>
+
+        <!-- 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="취미 : "
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+            <AutoCompleteTextView
+                android:id="@+id/catch_join_page_hobby_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:maxLength="11"/>
+        </LinearLayout>
         <TextView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:text="confirm : "
-            android:textSize="20dp"
-            android:gravity="center_vertical"/>
-        <EditText
-            android:id="@+id/join_page_pwcf_id"
-            android:layout_width="180dp"
-            android:layout_height="50dp"
-            android:hint="비밀번호를 다시 입력해주세요"
-            android:inputType="textPassword"/>
-        </LinearLayout>
-    <!--비밀번호 확인 끝-->
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/password_fail"
+            android:text="*위 정보들은 커플매칭시에 쓰이는 정보들입니다. 신중하게 기입해주세요\n"/>
+        <!--성격 끝-->
 
-    <!--개인정보 동의 시작-->
-    <CheckBox
-        android:id="@+id/join_page_check_personalinfo"
-        android:layout_height="50dp"
-        android:layout_width="300dp"
-        android:layout_marginLeft="30dp"
-        android:text="개인정보 취급방침에 동의하십니까?"/>
-    <!--개인정보 동의 끝-->
-
-    <!--이용약관 시작-->
-    <CheckBox
-        android:id="@+id/join_page_check_useinfo"
-        android:layout_height="50dp"
-        android:layout_width="300dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="-10dp"
-        android:text=" 이용약관에 동의하십니까?"/>
-    <!--이용약관 끝-->
-
-    <!--버튼들 시작-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="50"
+        <!--개인정보 동의 시작-->
+        <CheckBox
+            android:id="@+id/join_page_check_personalinfo"
             android:layout_height="50dp"
-            android:text="이전으로"
-            android:id="@+id/join_page_before_button" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="50"
-            android:layout_height="50dp"
-            android:onClick="insert"
-            android:text="가입완료"
-            android:id="@+id/join_page_next_button" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="50"
-            android:layout_height="50dp"
-            android:onClick="insert"
-            android:text="소개팅 정보 입력"
-            android:id="@+id/join_page_search_button" />
-        </LinearLayout>
+            android:layout_width="300dp"
+            android:layout_marginLeft="30dp"
+            android:text="개인정보 취급방침에 동의하십니까?"/>
+        <!--개인정보 동의 끝-->
 
-    <!--버튼들 끝-->
-</LinearLayout>
+        <!--이용약관 시작-->
+        <CheckBox
+            android:id="@+id/join_page_check_useinfo"
+            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="-10dp"
+            android:text=" 이용약관에 동의하십니까?"/>
+        <!--이용약관 끝-->
+
+        <!--버튼들 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <!--
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:text="이전으로"
+                android:id="@+id/join_page_before_button" />-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:onClick="insert_join"
+                android:text="가입완료"
+                android:id="@+id/catch_join_page_finish_button" />
+            <!--
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:onClick="insert"
+                android:text="가입 완료"
+                android:id="@+id/join_page_search_button" />-->
+            </LinearLayout>
+
+        <!--버튼들 끝-->
+    </LinearLayout>
+    </ScrollView>
