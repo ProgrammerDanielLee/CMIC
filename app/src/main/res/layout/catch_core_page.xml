@@ -1,0 +1,149 @@
+<LinearLayout android:id="@+id/ll_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/core_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:height="?actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:minHeight="?attr/actionBarSize">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catch me, if you can"
+        android:gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+            <!-- Drawer시작-->
+            <android.support.v4.widget.DrawerLayout
+                android:id="@+id/core_drawer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".catch_core_page">
+
+                <!--Drawer 내에 표시될 부분-->
+                <FrameLayout
+                    android:id="@+id/core_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/com_facebook_button_background_color_focused_disabled"/>
+<!--이부분이 Main 컨텐츠-->
+                <View
+                    android:id="@+id/core_drawer"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/com_facebook_button_background_color_focused"
+                    android:layout_gravity="start" />
+<!--
+                    <TextView
+                        android:id="@+id/email_label"
+                        android:textSize="20dp"
+                        android:textColor="@color/com_facebook_button_background_color_focused_disabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="email"/>
+                    <TextView
+                        android:id="@+id/name_label"
+                        android:layout_below="@+id/email_label"
+                        android:textSize="20dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/com_facebook_button_background_color_focused_disabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="name"/>
+                    <TextView
+                        android:id="@+id/sex_label"
+                        android:layout_below="@+id/name_label"
+                        android:layout_marginTop="60dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/com_facebook_button_background_color_focused_disabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="sex"/>-->
+                <!--drawer속에 표시될 부분-->
+                <!--Drawer 내에 표시될 부분 끝-->
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="im here!"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>-->
+                <!--여기서부터 탭 시작-->
+                <TabHost
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@android:id/tabhost">
+
+                    <LinearLayout
+                        android:id="@+id/core_linear_layout"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent">
+                    <!-- 메뉴 하나하나 시작-->
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:background="@color/com_facebook_button_background_color_disabled"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"/>
+                    <!-- 메뉴 하나하나 끝-->
+                    <!--본문 시작-->
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                            <!--
+                            <LinearLayout
+                                android:id="@+id/tabcontent_tab1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="This is tab1"/>
+                                </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/tabcontent_tab2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="This is tab2"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/tabcontent_tab3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="This is tab3"/>
+                            </LinearLayout>-->
+
+                    <!--본문 끝-->
+                    </LinearLayout>
+                </TabHost>
+                <!--탭 레이아웃 끝-->
+            </android.support.v4.widget.DrawerLayout>
+            <!--Drawer 끝-->
+</LinearLayout>
+    <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+

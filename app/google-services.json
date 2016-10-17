@@ -1,33 +1,27 @@
 {
   "project_info": {
-    "project_number": "945623023462",
-    "project_id": "project-943657120454450440"
+    "project_number": "416238390079",
+    "firebase_url": "https://catchmeifyoucan-c7de1.firebaseio.com",
+    "project_id": "catchmeifyoucan-c7de1",
+    "storage_bucket": "catchmeifyoucan-c7de1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:945623023462:android:557fcb885c6c04f4",
+        "mobilesdk_app_id": "1:416238390079:android:557fcb885c6c04f4",
         "android_client_info": {
           "package_name": "com.example.lovef.catch_me_if_you_can"
         }
       },
       "oauth_client": [
         {
-          "client_id": "945623023462-7fprbois6iht0etchjk5q15os3go8ss4.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.lovef.catch_me_if_you_can",
-            "certificate_hash": "BC071A6A002D979D3A40C868DFB416D84A3E10D5"
-          }
-        },
-        {
-          "client_id": "945623023462-dspsjtedndkbhmouci957p8tm5u09sb4.apps.googleusercontent.com",
+          "client_id": "416238390079-0i4h5gagr1bim24g35bqjf23sacbgke0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCCEtHbu8w_JzXOkMnFUf61Jrx0-a8OGWo"
+          "current_key": "AIzaSyCSzjv1wn2PNCd1qNHyQ_VSs15_yqtTi5Y"
         }
       ],
       "services": {
@@ -39,7 +33,7 @@
           "other_platform_oauth_client": []
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }

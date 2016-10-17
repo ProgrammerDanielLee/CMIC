@@ -201,6 +201,16 @@
             android:text="로그인"
             android:id="@+id/main_page_login_button" />
     </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkbox_autologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="10dp"
+        android:text="자동 로그인"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
     <!--회원가입,로그인 버튼 끝 -->
 
 
@@ -346,10 +356,10 @@
 
     <!--php+mysql+listview+button start-->
     <Button
-        android:id="@+id/datalistview_button"
+        android:id="@+id/catch_core_page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="php+mysql+listview+button"/>
+        android:text="core_page"/>
     <!--php+mysql+listview+button end-->
 
     <!--php+mysql+fcm start-->
@@ -367,5 +377,13 @@
         android:layout_height="wrap_content"
         android:text="crone tab"/>
     <!--crone tab end-->
+
+    <!--service test button-->
+    <Button
+        android:id="@+id/service_test_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="service test"/>
+    <!--service test button end-->
 </LinearLayout>
 </ScrollView>

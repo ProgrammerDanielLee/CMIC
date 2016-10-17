@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_name_3"
+        android:layout_toRightOf="@+id/tx_name_2"
+        android:text="미리보기"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_name_1"
+        android:layout_alignParentLeft="true"
+        android:text="미리보기"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tx_name_1"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="호"/>
+
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_name_2"
+        android:layout_toRightOf="@+id/tx_name_1"
+        android:text="미리보기"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_name_4"
+        android:layout_toRightOf="@+id/tx_name_3"
+        android:text="미리보기"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+
+    </RelativeLayout>

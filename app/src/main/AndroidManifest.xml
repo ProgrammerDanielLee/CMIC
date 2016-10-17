@@ -2,19 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lovef.catch_me_if_you_can">
     <uses-permission android:name="android.permission.INTERNET"/><!--facebook login여기-->
-    <!--구글 시작-
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--구글 시작
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    구글 끝-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>구글 끝-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <meta-data
+        android:theme="@style/AppTheme"><!--gcm receiver 여기서부터 위로 세줄-->
+        <!--gcm receiver intent-filter안으로 다 gcm관련 권한한-->
+       <meta-data
             android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/><!--facebook login여기-->
             <activity android:name=".MainActivity">
                 <intent-filter>
@@ -44,11 +45,18 @@
             <activity android:name=".datalistview"/>
             <activity android:name=".php_mysql_fcm"/>
             <activity android:name=".php_cronetab"/>
-
+          <activity android:name=".datatextview2"/>
+          <activity android:name=".test_listviwe_json"/>
+        <activity android:name=".catch_core_page"/>
+        <activity android:name=".catch_core_page_one"/>
+        <activity android:name=".catch_core_page_two"/>
+        <activity android:name=".catch_core_page_three"/>
+        <activity android:name=".catch_core_page_one_view"/>
+        <activity android:name=".test_counterservice_view"/>
+        <activity android:name=".test_broadcast"/>
         <!--facebook login여기-->
             <activity android:name="com.facebook.FacebookActivity"
-                android:configChanges=
-                    "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
                 android:label="@string/app_name" />
         <!--naver login여기-->
         <!--
@@ -57,6 +65,33 @@
         <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
             android:label="OAuth2.0 In-app" android:screenOrientation="portrait"/>
             -->
-    </application>
 
+    <!-- gcm receiver start-->
+    <!--gcm receiver end-->
+
+    <!-- gcm service start-->
+    <!-- gcm service end-->
+
+
+    <service android:name=".test_countservice">
+        <intent-filter><!--인텐트 필더로 연결~-->
+            <action android:name="com.superoid.service.test_countservice"/>
+        </intent-filter>
+    </service>
+        <!--
+    <receiver
+        android:name="com.google.android.gms.gcm.GcmReceiver"
+        android:exported="true"
+        android:permission="com.google.android.c2dm.permission.SEND">
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            <category android:name="com.brianandroid.myzzung.coli.gcm"/>
+        </intent-filter>
+    </receiver>-->
+    <receiver android:name=".test_broadcast">
+            <intent-filter>
+                <action android:name="com.superoid.test.Broadcasting.action.FILE_DOWNLOAD"/>
+            </intent-filter>
+    </receiver>
+    </application>
 </manifest>

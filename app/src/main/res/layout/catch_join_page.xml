@@ -37,6 +37,28 @@
                 android:windowSoftInputMode="stateAlwaysHidden"
                 android:layout_width="200dp"
                 android:layout_height="50dp"/>
+            <!--facebook email 시작-->
+            <TextView
+                android:id="@+id/facebook_email"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"/>
+            <!--facebook email 끝-->
+
+            <!--google email 시작-->
+            <TextView
+                android:id="@+id/google_email"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"/>
+            <!--google email 끝-->
+
             <!--자동포커스를 막는 두가지 속성 android:focusable="true" android:focusableInTouchMode="true"-->
             <!--그리고 초기 키보드 자동실행을 막는법또한 android:windowSoftInputMode="stateAlwaysHidden"이다-->
         </LinearLayout>
@@ -67,6 +89,27 @@
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:maxLength="11"/>
+            <!--facebook name 시작-->
+            <TextView
+                android:id="@+id/facebook_name"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"/>
+            <!--facebook name 끝-->
+
+            <!--google name 시작-->
+            <TextView
+                android:id="@+id/google_name"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"/>
+            <!--google name 끝-->
         </LinearLayout>
         <TextView
             android:gravity="center"
@@ -87,6 +130,7 @@
 
         <!--비밀번호 시작-->
         <LinearLayout
+            android:id="@+id/password_linear"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
@@ -116,6 +160,7 @@
         <!--비밀번호 끝-->
         <!--비밀번호 확인 시작-->
         <LinearLayout
+            android:id="@+id/passwordcf_linear"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
@@ -138,21 +183,21 @@
         <!--성별 시작-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp">
                 <TextView
                     android:layout_width="100dp"
-                    android:layout_height="30dp"
+                    android:layout_height="40dp"
                     android:text="성 별 : "
                     android:textSize="20dp"
                     android:gravity="center"/>
                 <RadioGroup
                     android:id="@+id/catch_join_page_sexs_radiogroup"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:orientation="horizontal">
                     <RadioButton
@@ -174,6 +219,27 @@
                         android:layout_marginLeft="20dp"
                         android:text="기타"/>-->
                 </RadioGroup>
+            <!--facebook sex 시작-->
+            <TextView
+                android:id="@+id/facebook_sex"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"/>
+            <!--facebook sex 끝-->
+
+            <!--google sex 시작-->
+            <TextView
+                android:id="@+id/google_sex"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"/>
+            <!--google sex 끝-->
             </LinearLayout>
         <!--성별 끝-->
 
