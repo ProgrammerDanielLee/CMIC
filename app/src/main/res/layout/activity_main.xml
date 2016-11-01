@@ -3,387 +3,389 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="10">
-    <TextView
-        android:layout_weight="3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:text="Catch \n me \n if \n you \n can" />
-
-    <!--facebook 시작-->
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/facebook_login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
-    <!--facebook 끝-->
-<!--Google + login 시작-->
-<!--
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sign_out"
-        android:textColor="@android:color/white"
-        android:textSize="14sp" />
--->
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="gonclick"
-        android:paddingRight="-10dp"
-        android:paddingLeft="-10dp"
-        android:layout_marginBottom="20dp"/>
-
-    <Button
-        android:id="@+id/sign_out_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:text="@string/signed_out_fmt"
-        android:visibility="gone"
-        android:layout_margin="10dp"
-        />
-    
-    <Button
-        android:id="@+id/sign_revoke_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="revoke"
-        android:visibility="gone"
-        android:layout_margin="10dp"/>
-    <TextView
-        android:id="@+id/google_email"
-        android:visibility="gone"
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/google_name"
-        android:visibility="gone"
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/google_sex"
-        android:visibility="gone"
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <!--
-    <TextView
-        android:id="@+id/google_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>-->
-<!--
     <LinearLayout
-        android:id="@+id/sign_out_and_disconnect"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:visibility="gone"
-        tools:visibility="visible">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <!--
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Catch \n me \n if \n you \n can" />-->
+        <ImageView
+            android:src="@drawable/main2"
+            android:layout_marginTop="-40dp"
+            android:paddingTop="-30dp"
+            android:layout_marginBottom="-60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
+        <!--facebook 시작-->
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="245dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+        <!--facebook 끝-->
+        <!--Google + login 시작-->
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="gonclick"
+            android:paddingRight="-10dp"
+            android:paddingLeft="-10dp"
+            android:layout_marginBottom="20dp"/>
+        <!--구글 로그아웃 버튼 시작-->
         <Button
             android:id="@+id/sign_out_button"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="sign_out"
+            android:text="@string/signed_out_fmt"
+            android:visibility="gone"
+            android:layout_margin="10dp"
             />
-
+        <!--구글 로그아웃 버튼 끝-->
+        <!--구글 회원탈퇴 버튼 시작-->
         <Button
-            android:id="@+id/disconnect_button"
-            android:layout_width="0dp"
+            android:id="@+id/sign_revoke_button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="disconnect"
-            />
-    </LinearLayout>-->
+            android:text="revoke"
+            android:visibility="gone"
+            android:layout_margin="10dp"/>
+        <!--구글 회원탈퇴 버튼 끝-->
+        <!-- 시험 테스트(구글로그인) 시작 -->
+        <TextView
+            android:id="@+id/google_email"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-<!--Google + login 끝-->
-    <!--Google login 시작-->
-    <!--
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="visible"
-        tools:visibility="gone" />
-        -->
-    <!--Google login 끝-->
-    <!--Naver시작-->
-    <!--
-    <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
-        android:id="@+id/buttonOAuthLoginImg"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp" />
-        -->
-    <!--Naver 끝-->
-    <!--이메일 시작-->
-    <LinearLayout
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        <TextView
+            android:id="@+id/google_name"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/google_sex"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- 시험 테스트(구글로그인) 끝 -->
+        <!--Google + login 끝-->
+
+        <!--보통의 로그인 폼 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <!--이메일 시작-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="e-mail : "
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/meeting_place_toolbar_font_color"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/main_page_email"
+                    android:textColor="@color/meeting_place_toolbar_font_color"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp" />
+        </LinearLayout>
+        <!--이메일 끝-->
+        <!--비밀번호 시작-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
             <TextView
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="e-mail : "
+                android:text="password : "
+                android:textStyle="italic"
+                android:textColor="@color/meeting_place_toolbar_font_color"
                 android:textSize="20dp"
                 android:gravity="center_vertical"/>
             <EditText
-                android:id="@+id/main_page_email_id"
-                android:layout_width="200dp"
+                android:id="@+id/main_page_pw"
+                android:layout_width="180dp"
                 android:layout_height="50dp"
-                android:hint="이메일을 입력하세요"/>
-    </LinearLayout>
-    <!--이메일 끝-->
-    <!--비밀번호 시작-->
-    <LinearLayout
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+                android:textColor="@color/meeting_place_toolbar_font_color"
+                android:inputType="textPassword" />
+        </LinearLayout>
+       <!--비밀번호 끝-->
+
+        <!--회원가입,로그인 버튼 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textColor="@color/meeting_place_toolbar_font_color"
+                android:text="JOIN"
+                android:id="@+id/main_page_join_button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textColor="@color/meeting_place_toolbar_font_color"
+                android:text="SIGN UP"
+                android:id="@+id/main_page_login_button"/>
+        </LinearLayout>
+            <!--
+        <CheckBox
+            android:id="@+id/checkbox_autologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="10dp"
+            android:text="자동 로그인"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>-->
+        <!--회원가입,로그인 버튼 끝 -->
+        </LinearLayout>
+        <!--보통의 로그인 폼 끝-->
+
+
+
+
+
+
+
+
+        <!--튜 토 리 얼 시 작 -->
         <TextView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:text="password : "
-            android:textSize="20dp"
-            android:gravity="center_vertical"/>
-        <EditText
-            android:id="@+id/main_page_pw_id"
-            android:layout_width="180dp"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            android:hint="비밀번호를 입력해주세요"/>
-    </LinearLayout>
-   <!--비밀번호 끝-->
-
-    <!--회원가입,로그인 버튼 시작-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="tutorial"/>
+        <!--face book login-->
         <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="50"
-            android:layout_height="50dp"
-            android:text="회원가입"
-            android:id="@+id/main_page_join_button" />
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="face book login"/>
+        <!--face book login end -->
+
+        <!--twiter book login-->
         <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="50"
-            android:layout_height="50dp"
-            android:text="로그인"
-            android:id="@+id/main_page_login_button" />
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="twiter login"/>
+        <!--twiter book login end-->
+
+        <!--google+ login-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="google+ login"/>
+        <!--google+ login end-->
+
+        <!-- naver login-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="naver login"/>
+        <!-- naver login end-->
+
+        <!-- test login-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test login"
+            android:id="@+id/test_login"
+            android:onClick="onButton"/>
+        <!-- test login-->
+
+        <!-- search page-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="search page"
+            android:id="@+id/search_page_button"/>
+        <!-- search page end-->
+
+        <!--Thread page-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thread page"
+            android:id="@+id/thread_page_button"/>
+        <!--Thread page end-->
+
+        <!--Async page-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="async page"
+            android:id="@+id/async_page_button"/>
+        <!--Async page end-->
+
+        <!--회원가입 페이지-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="join page"
+            android:id="@+id/join_page_button1"/>
+        <!--회원가입 페이지 끝-->
+
+        <!--fragment 예제-->
+        <!--main에 풀어놨음-->
+        <!--fragment 예제 끝-->
+
+        <!--View pager + fragment 시작-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View pager+Fragment"
+            android:id="@+id/viewpager_button"/>
+        <!--Viewpager+ fragment 끝-->
+
+        <!--view pager + tab 시작-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View pager+ActionBar(Tab)"
+            android:id="@+id/tablayout_button"/>
+        <!--viewpager +tap끝-->
+
+        <!--viewpager+tap+fragment 시작-->
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viewpager+ActionBar(Tab)+fragment"
+            android:id="@+id/v_a_f"
+            />
+        <!--viewpager+tap+fragment 끝-->
+
+        <!--fragment 시작-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment"
+            android:id="@+id/bt_test_fragment"/>
+        <!--fragment 끝 -->
+
+        <!--tabpager+tab+fragment 시작-->
+        <Button
+            android:id="@+id/tabpagerfragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tabpagerfragment(not actionbar)"/>
+        <!--tabpager+tab+fragment 끝-->
+
+        <!--php+mysql+textview+button start-->
+        <Button
+            android:id="@+id/datatextview_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="php+mysql+textview+button"/>
+        <!--php+mysql+textview+button end-->
+
+        <!--php+mysql+listview+button start-->
+        <Button
+            android:id="@+id/catch_core_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="core_page"/>
+        <!--php+mysql+listview+button end-->
+
+        <!--php+mysql+fcm start-->
+        <Button
+            android:id="@+id/php_mysql_fcm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="php_mysql_fcm"/>
+        <!--php+mysql+fcm end-->
+
+        <!--crone tab start-->
+        <Button
+            android:id="@+id/php_cronetab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="crone tab"/>
+        <!--crone tab end-->
+
+        <!--service test button-->
+        <Button
+            android:id="@+id/service_test_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="service test"/>
+        <!--service test button end-->
+
+        <!--test_chat_1 start-->
+        <Button
+            android:id="@+id/test_chat_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="first chat app"/>
+        <!--test_chat_1 end-->
+
+        <Button
+            android:id="@+id/test_chat_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="third chat app"/>
+        <Button
+            android:id="@+id/test_chat_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 chat app"/>
+
+        <Button
+            android:id="@+id/test_chat_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 chat app"/>
     </LinearLayout>
-    <CheckBox
-        android:id="@+id/checkbox_autologin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginTop="10dp"
-        android:text="자동 로그인"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"/>
-    <!--회원가입,로그인 버튼 끝 -->
-
-
-    <TextView
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="tutorial"/>
-    <!--face book login-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="face book login"/>
-    <!--face book login end -->
-
-    <!--twiter book login-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="twiter login"/>
-    <!--twiter book login end-->
-
-    <!--google+ login-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="google+ login"/>
-    <!--google+ login end-->
-
-    <!-- naver login-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="naver login"/>
-    <!-- naver login end-->
-
-    <!-- test login-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="test login"
-        android:id="@+id/test_login"
-        android:onClick="onButton"/>
-    <!-- test login-->
-
-    <!-- search page-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="search page"
-        android:id="@+id/search_page_button"/>
-    <!-- search page end-->
-
-    <!--Thread page-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Thread page"
-        android:id="@+id/thread_page_button"/>
-    <!--Thread page end-->
-
-    <!--Async page-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="async page"
-        android:id="@+id/async_page_button"/>
-    <!--Async page end-->
-
-    <!--회원가입 페이지-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="join page"
-        android:id="@+id/join_page_button1"/>
-    <!--회원가입 페이지 끝-->
-
-    <!--fragment 예제-->
-    <!--main에 풀어놨음-->
-    <!--fragment 예제 끝-->
-    
-    <!--View pager + fragment 시작-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View pager+Fragment"
-        android:id="@+id/viewpager_button"/>
-    <!--Viewpager+ fragment 끝-->
-
-    <!--view pager + tab 시작-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View pager+ActionBar(Tab)"
-        android:id="@+id/tablayout_button"/>
-    <!--viewpager +tap끝-->
-
-    <!--viewpager+tap+fragment 시작-->
-    <Button
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Viewpager+ActionBar(Tab)+fragment"
-        android:id="@+id/v_a_f"
-        />
-    <!--viewpager+tap+fragment 끝-->
-
-    <!--fragment 시작-->
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fragment"
-        android:id="@+id/bt_test_fragment"/>
-    <!--fragment 끝 -->
-
-    <!--tabpager+tab+fragment 시작-->
-    <Button
-        android:id="@+id/tabpagerfragment_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="tabpagerfragment(not actionbar)"/>
-    <!--tabpager+tab+fragment 끝-->
-
-    <!--php+mysql+textview+button start-->
-    <Button
-        android:id="@+id/datatextview_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="php+mysql+textview+button"/>
-    <!--php+mysql+textview+button end-->
-
-    <!--php+mysql+listview+button start-->
-    <Button
-        android:id="@+id/catch_core_page"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="core_page"/>
-    <!--php+mysql+listview+button end-->
-
-    <!--php+mysql+fcm start-->
-    <Button
-        android:id="@+id/php_mysql_fcm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="php_mysql_fcm"/>
-    <!--php+mysql+fcm end-->
-
-    <!--crone tab start-->
-    <Button
-        android:id="@+id/php_cronetab"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="crone tab"/>
-    <!--crone tab end-->
-
-    <!--service test button-->
-    <Button
-        android:id="@+id/service_test_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="service test"/>
-    <!--service test button end-->
-</LinearLayout>
 </ScrollView>

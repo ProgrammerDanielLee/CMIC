@@ -7,4 +7,8 @@
     <color name="spinner_title_item_white">#FFFF</color>
     <color name="password_success">#0EAC3D</color>
     <color name="password_fail">#ED1C24</color>
+    <color name="login_form">#DBDBDB</color>
+    <color name="meeting_place_toolbar_color">#BDB4AF</color>
+    <color name="meeting_place_toolbar_font_color">#B45E2F</color>
+    <color name="list_item_select">#FFD1B2</color>
 </resources>

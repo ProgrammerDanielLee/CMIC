@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_container"
+        android:layout_weight="1">
+        <!--아마도 여기에 listview가 들어가야 겠지-->
+        <TextView
+            android:listSelector="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:id="@+id/textview_chat5"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:transcriptMode="alwaysScroll"/>
+        <!--아마도 여기에 listview가 들어가야겠지 끝-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/com_facebook_device_auth_text"
+        android:orientation="horizontal"
+        android:layout_below="@id/chat_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="메세지를 입력하세요"
+            android:id="@+id/inputtext_chat5"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.92"/>
+        <Button
+            android:id="@+id/sendbutton_chat5"
+            android:onClick="onSendBtnClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보내기"/>
+    </LinearLayout>
+</LinearLayout>

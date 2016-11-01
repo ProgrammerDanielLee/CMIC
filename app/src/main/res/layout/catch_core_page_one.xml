@@ -1,31 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ListView
-        android:id="@+id/core_list"
+        android:id="@+id/core_one_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="80"
-        android:listSelector="@color/common_action_bar_splitter"
+        android:listSelector="@color/list_item_select"
         android:fontFamily="sans-serif"
+        android:divider="@color/meeting_place_toolbar_font_color"
         />
+    <!--
     <Button
         android:id="@+id/give_gcm_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="android_gcm_test(regid send)"/>
-    <Button
-        android:id="@+id/give_women_button"
+        android:text="android_gcm_test(regid send)"/>-->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="8dp"
-        android:text="이성 소개받기"/>
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+    <Button
+        android:background="@color/cardview_light_background"
+        android:id="@+id/give_women_button"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:drawableBottom="@drawable/core_icon_image_9_howto"
+        android:textColor="@color/meeting_place_toolbar_font_color"
+        android:text="오늘의 이성 소개받기" />
+        <Button
+            android:visibility="gone"
+            android:background="@color/cardview_light_background"
+            android:id="@+id/select_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:drawableBottom="@drawable/core_icon_image_12_matching"
+            android:textColor="@color/meeting_place_toolbar_font_color"
+            android:text="선택가능 이성 확인하기" />
+        <Button
+            android:visibility="gone"
+            android:background="@color/cardview_light_background"
+            android:id="@+id/result_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:drawableBottom="@drawable/core_icon_image_8_terms"
+            android:textColor="@color/meeting_place_toolbar_font_color"
+            android:text="매칭 결과 확인하기" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/meeting_place_toolbar_font_color"
+        android:text="★결과는 1/2/3단계를 , 선택은 2/3단계를 확인하실 수 있습니다"/>
+    <!--
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="test"
-        android:id="@+id/test_textview"/>
-
+        android:id="@+id/test_textview"/>-->
 </LinearLayout>

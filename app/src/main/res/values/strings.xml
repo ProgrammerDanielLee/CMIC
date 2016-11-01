@@ -6,4 +6,9 @@
     <!--Button text-->
     <string name="signed_in_fmt">signed in</string><!--this is not button text-->
     <string name="signed_out_fmt">signed out</string>
+
+    <!-- drawer start
+    <strings name="drawer_open">drawer open</strings>
+    <strings name="drawer_close">drawer close</strings>
+    drawer end-->
 </resources>
